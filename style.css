@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#quiz-board {
+  width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#question-counter {
+  font-size: 1.72rem;
+  font-weight: 700;
+}
+#question,
+#answers,
+.row {
+  margin-top: 2.65rem;
+}
+#question,
+#answers li {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+#answers {
+  list-style-type: upper-alpha;
+  width: 100%;
+  position: relative;
+  height: 60px;
+}
+
+#answers li {
+  width: max-content;
+  list-style-position: inside;
+  cursor: pointer;
+  position: absolute;
+}
+
+#answers li::first-letter {
+  text-transform: capitalize;
+}
+
+#answers li:nth-of-type(even) {
+  right: 0;
+}
+
+#answers li:nth-child(3),
+#answers li:nth-child(4) {
+  bottom: 0;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.row .timer {
+  width: max-content;
+}
+
+.btn {
+  border: none;
+  padding: 0.8rem 2.5rem;
+  background: #2092c3;
+  color: #fff;
+}
+
+.btn:hover {
+  background: #157aa5;
+}
+
+.btn:disabled {
+  background: #b9b9b9;
+  cursor: not-allowed;
+}
