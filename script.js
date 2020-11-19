@@ -109,7 +109,6 @@ function showResult() {
   h1.innerText = `You correctly answered ${correctAnswers} out of ${questions.length} questions`;
   let quizBoard = document.getElementById("quiz-board");
   document.body.replaceChild(h1, quizBoard);
-  //   quizBoard.appendChild(h1);
 }
 
 window.onload = loadQuestion;
